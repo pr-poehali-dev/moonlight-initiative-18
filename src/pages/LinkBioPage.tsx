@@ -2,51 +2,45 @@ import { motion } from "framer-motion"
 import { ProfileSection } from "@/components/ProfileSection"
 import { LinkCard } from "@/components/LinkCard"
 import { SocialFooter } from "@/components/SocialFooter"
-import { Globe, Youtube, Mail, Instagram, FileText, MessageCircle, Send, Github, Music } from "lucide-react"
+import { ShoppingBag, Send, Instagram, Star, Truck, Phone, Mail, MessageCircle } from "lucide-react"
 
 const links = [
   {
-    title: "Мой сайт",
-    description: "Личная страница и проекты",
+    title: "Каталог кроссовок",
+    description: "Все модели — Nike, Adidas, New Balance",
     href: "#",
-    icon: Globe,
+    icon: ShoppingBag,
   },
   {
-    title: "Telegram",
-    description: "Написать напрямую",
+    title: "Новинки и хиты",
+    description: "Свежие поступления этой недели",
     href: "#",
-    icon: Send,
+    icon: Star,
   },
   {
     title: "Instagram",
-    description: "Фото и истории",
+    description: "Фото новинок и отзывы клиентов",
     href: "#",
     icon: Instagram,
   },
   {
-    title: "YouTube",
-    description: "Видео и контент",
+    title: "Написать в Telegram",
+    description: "Быстрый заказ и консультация",
     href: "#",
-    icon: Youtube,
+    icon: Send,
   },
   {
-    title: "GitHub",
-    description: "Мои проекты и код",
+    title: "Доставка и оплата",
+    description: "По всей России от 1–3 дней",
     href: "#",
-    icon: Github,
-  },
-  {
-    title: "Музыка",
-    description: "Плейлисты и треки",
-    href: "#",
-    icon: Music,
+    icon: Truck,
   },
 ]
 
 const socials = [
   { icon: Send, href: "#", label: "Telegram" },
+  { icon: Phone, href: "#", label: "Phone" },
   { icon: Mail, href: "#", label: "Email" },
-  { icon: MessageCircle, href: "#", label: "WhatsApp" },
 ]
 
 const containerVariants = {
@@ -217,9 +211,9 @@ export function LinkBioPage() {
       >
         <motion.div variants={itemVariants} className="pt-2">
           <ProfileSection
-            name="Привет, я — это я 👋"
-            bio="Мои ссылки в одном месте"
-            imageUrl="/placeholder-user.jpg"
+            name="👟 Sneaker Shop"
+            bio="Кроссовки топовых брендов • Быстрая доставка"
+            imageUrl="/placeholder.jpg"
           />
         </motion.div>
 
@@ -232,7 +226,7 @@ export function LinkBioPage() {
         </motion.div>
 
         <motion.div variants={itemVariants} className="pb-2">
-          <SocialFooter socials={socials} copyright="2026 — Мои ссылки" />
+          <SocialFooter socials={socials} copyright="2026 Sneaker Shop — все права защищены" />
         </motion.div>
       </motion.div>
     </main>
